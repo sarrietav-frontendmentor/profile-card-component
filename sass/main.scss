@@ -3,6 +3,12 @@ $dark-blue: hsl(229, 23%, 23%);
 $grayish-blue: hsl(227, 10%, 46%);
 $dark-gray: hsl(0, 0%, 59%);
 
+@mixin phone-styles {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +23,11 @@ $dark-gray: hsl(0, 0%, 59%);
 body {
   font-family: 'Kumbh Sans', sans-serif;
   color: $dark-blue;
-  background-image: linear-gradient(to bottom left, $dark-cyan, lighten($dark-cyan, 7));
+  background-image: linear-gradient(
+    to bottom left,
+    $dark-cyan,
+    lighten($dark-cyan, 7)
+  );
   height: 100vh;
   overflow: hidden;
   display: flex;
