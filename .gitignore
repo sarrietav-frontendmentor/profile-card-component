@@ -4,3 +4,5 @@ style-guide/
 *.css.map
 *.sass.map
 *.scss.map
+css/style.css
+css/style.comp.css
