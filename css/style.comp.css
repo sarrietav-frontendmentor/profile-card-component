@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+:root {
+  font-size: 112.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #2d3248; }

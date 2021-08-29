@@ -5,4 +5,4 @@ style-guide/
 *.sass.map
 *.scss.map
 css/style.css
-css/style.comp.css
+css/style.prefix.css
