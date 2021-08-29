@@ -58,8 +58,11 @@ body {
     transform: translate(-50%, -50%);
     clip-path: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    border: #fff solid .5rem;
+    border: #fff solid 0.5rem;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 
   &__image {
@@ -69,5 +72,23 @@ body {
 
   &__details {
     margin-top: 3rem;
+    text-align: center;
+  }
+}
+
+.user-info {
+  &__name {
+    font-size: 1.25rem;
+    display: inline-block;
+    margin: .5rem;
+  }
+
+  &__age {
+    color: $dark-gray;
+  }
+
+  &__location {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
