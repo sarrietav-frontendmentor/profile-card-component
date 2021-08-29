@@ -11,21 +11,38 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   color: #2d3248;
   background-image: linear-gradient(to bottom left, #19a2ae, #1dbfcd);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+  @media only screen and (max-width: 375px) {
+    body {
+      overflow: initial; } }
 
 .circle {
   position: absolute;
   z-index: -1; }
+  @media only screen and (max-width: 375px) {
+    .circle {
+      width: 120%; } }
   .circle--top {
     top: -80%;
     left: -15%; }
+    @media only screen and (max-width: 375px) {
+      .circle--top {
+        top: -15%;
+        left: -55%; } }
   .circle--bottom {
     bottom: -80%;
     right: -20%; }
+    @media only screen and (max-width: 375px) {
+      .circle--bottom {
+        bottom: -15%;
+        right: -55%; } }
 
 .card {
   background-color: #fff;

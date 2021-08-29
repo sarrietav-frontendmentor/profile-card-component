@@ -3,6 +3,12 @@ $dark-blue: hsl(229, 23%, 23%);
 $grayish-blue: hsl(227, 10%, 46%);
 $dark-gray: hsl(0, 0%, 59%);
 
+@mixin phone-styles {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,26 +23,51 @@ $dark-gray: hsl(0, 0%, 59%);
 body {
   font-family: 'Kumbh Sans', sans-serif;
   color: $dark-blue;
-  background-image: linear-gradient(to bottom left, $dark-cyan, lighten($dark-cyan, 7));
+  background-image: linear-gradient(
+    to bottom left,
+    $dark-cyan,
+    lighten($dark-cyan, 7)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  @include phone-styles {
+    overflow: initial;
+  }
 }
 
 .circle {
   position: absolute;
   z-index: -1;
 
+    @include phone-styles {
+      width: 120%;
+    }
+
   &--top {
     top: -80%;
     left: -15%;
+
+    @include phone-styles {
+      top: -15%;
+      left: -55%;
+    }
   }
 
   &--bottom {
     bottom: -80%;
     right: -20%;
+
+    @include phone-styles {
+      bottom: -15%;
+      right: -55%;
+    }
   }
 }
 
