@@ -4,6 +4,7 @@
   "main": "index.js",
   "repository": "git@github.com:sarrietav-frontendmentor/profile-card-component.git",
   "author": "Sebastian Arrieta <25210925+sarrietav-dev@users.noreply.github.com>",
+  "homepage": "https://sarrietav-frontendmentor.github.io/profile-card-component/",
   "license": "MIT",
   "scripts": {
     "sass": "node-sass sass/main.scss css/style.css -w --source-map true",
