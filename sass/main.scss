@@ -1,0 +1,113 @@
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-blue: hsl(229, 23%, 23%);
+$grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 112.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: $dark-blue;
+  background-image: linear-gradient(to bottom left, $dark-cyan, lighten($dark-cyan, 7));
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+
+  &--top {
+    top: -80%;
+    left: -15%;
+  }
+
+  &--bottom {
+    bottom: -80%;
+    right: -20%;
+  }
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.25);
+  border-radius: 1rem;
+  position: relative;
+
+  &__pattern {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  &__figure {
+    position: absolute;
+    top: 36.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    border: #fff solid 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__image {
+    border-radius: 50%;
+    height: 100%;
+  }
+
+  &__details {
+    margin-top: 3.5rem;
+    text-align: center;
+  }
+}
+
+.user-info {
+  margin-bottom: 3rem;
+
+  &__name {
+    font-size: 1.15rem;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
+  &__age {
+    color: $dark-gray;
+  }
+
+  &__location {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $dark-gray;
+  }
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+
+  &__stat {
+    .quantity {
+      font-weight: 700;
+    }
+    .label {
+      font-size: 0.75rem;
+      color: $dark-gray;
+    }
+  }
+}
