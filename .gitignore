@@ -1,4 +1,5 @@
 node_modules/
+style-guide/
 .sass-cache/
 *.css.map
 *.sass.map
