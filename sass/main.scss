@@ -17,4 +17,22 @@ $dark-gray: hsl(0, 0%, 59%);
 body {
   font-family: 'Kumbh Sans', sans-serif;
   color: $dark-blue;
+  background-color: $dark-cyan;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+
+  &--top {
+    top: -80%;
+    left: -15%;
+  }
+
+  &--bottom {
+    bottom: -80%;
+    right: -20%;
+  }
 }
