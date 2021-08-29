@@ -20,6 +20,9 @@ body {
   background-color: $dark-cyan;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
@@ -34,5 +37,16 @@ body {
   &--bottom {
     bottom: -80%;
     right: -20%;
+  }
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.25);
+  border-radius: 1rem;
+
+  &__pattern {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
   }
 }
