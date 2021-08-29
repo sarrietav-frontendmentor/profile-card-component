@@ -17,7 +17,7 @@ $dark-gray: hsl(0, 0%, 59%);
 body {
   font-family: 'Kumbh Sans', sans-serif;
   color: $dark-blue;
-  background-color: $dark-cyan;
+  background-image: linear-gradient(to bottom left, $dark-cyan, lighten($dark-cyan, 7));
   height: 100vh;
   overflow: hidden;
   display: flex;
