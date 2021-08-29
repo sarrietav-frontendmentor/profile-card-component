@@ -77,10 +77,12 @@ body {
 }
 
 .user-info {
+  margin-bottom: 3rem;
+
   &__name {
     font-size: 1.25rem;
     display: inline-block;
-    margin: .5rem;
+    margin: 0.5rem;
   }
 
   &__age {
@@ -90,5 +92,21 @@ body {
   &__location {
     font-size: 1rem;
     font-weight: 400;
+  }
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+
+  &__stat {
+    .quantity {
+      font-weight: 700;
+    }
+    .label {
+      font-size: 0.75rem;
+      color: $dark-gray;
+    }
   }
 }
